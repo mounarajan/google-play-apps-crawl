@@ -658,7 +658,7 @@ def dedupUrls3():
 
 #assigneCategory()
 #dedupUrls1()
-#extracctMainurls()
+extracctMainurls()
 #deatilsExtract("https://play.google.com/store/apps/details?id=com.tocaboca.tocakitchen2")
 #urlsDeatilsExtract("https://play.google.com/store/apps/details?id=com.issess.flashplayerpro")
 get_urls1()
