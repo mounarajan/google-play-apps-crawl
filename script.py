@@ -258,7 +258,7 @@ def get_urls1():
 
 def links_pag(url):
 	f2 = [url]
-	f5 = open('app_links.txt','a')
+	f5 = open('app_fuced.txt','a')
 	for url in f2:
 		url = re.sub(r'(?mis)[\s\n]*','',url)
 		# print url
