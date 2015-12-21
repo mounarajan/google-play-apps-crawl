@@ -631,9 +631,9 @@ def dedupUrls1():
 			rmdup.writelines(set(uniqlines))
 
 def dedupUrls2():
-	with open('app_links.txt') as result:
+	with open('app_fuced.txt') as result:
 		uniqlines = set(result.readlines())
-		with open('app_links1.txt', 'w') as rmdup:
+		with open('app_links_maybe.txt', 'w') as rmdup:
 			rmdup.writelines(set(uniqlines))
 
 def dedupUrls3():

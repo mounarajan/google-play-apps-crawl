@@ -258,7 +258,7 @@ def get_urls1():
 
 def links_pag(url):
 	f2 = [url]
-	f5 = open('app_fuced.txt','a')
+	f5 = open('app_links1.txt','a')
 	for url in f2:
 		url = re.sub(r'(?mis)[\s\n]*','',url)
 		# print url
@@ -633,8 +633,15 @@ def dedupUrls1():
 def dedupUrls2():
 	with open('app_links.txt') as result:
 		uniqlines = set(result.readlines())
-		with open('app_links1.txt', 'w') as rmdup:
+		with open('app_links1.txt', 'a') as rmdup:
 			rmdup.writelines(set(uniqlines))
+
+def dedupUrls4():
+	with open('app_links1.txt') as result:
+		uniqlines = set(result.readlines())
+		with open('app_links1.txt', 'a') as rmdup:
+			rmdup.writelines(set(uniqlines))
+
 
 def dedupUrls3():
 	with open('final_data.csv') as result:
@@ -656,7 +663,8 @@ def dedupUrls3():
 #urlsDeatilsExtract("https://play.google.com/store/apps/details?id=com.issess.flashplayerpro")
 get_urls1()
 dedupUrls2()
-#get_data()
-#dedupUrls3()
+dedupUrls4()
+get_data()
+dedupUrls3()
 
 	
